@@ -1,0 +1,5 @@
+<div class="control-name">{{controlName}}</div>
+<select (change)="onChange()" [(ngModel)]="selectedItem">
+  <option value="none">None</option>
+  <option *ngFor="let item of items" [value]="item.name">{{item.name}}</option>
+</select>
